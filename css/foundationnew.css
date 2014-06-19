@@ -5627,7 +5627,7 @@ letter-spacing: 12px;
 }
 #maintitle{
   background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRf9hzNOU3Gif6YRsdp8HpVpB8dNORnlizJYF54KnU4P5n86s4i9g');
-   
+   transition: all .4s;
   -webkit-background-clip: text;
   background-clip: text;
 
@@ -5638,12 +5638,12 @@ letter-spacing: 12px;
   font-weight: 900;
   font-size: 1em;
   letter-spacing: 9px;
-  left: 70px;
+  left: 120px;
     line-height: 3;
   margin-bottom: 0;
   z-index: 9;
   position: absolute;
-  top:80px;
+  top:50px;
   }
 
 body::selection {
@@ -6771,7 +6771,7 @@ nav ul li a {
 
 iframe {margin: 0px;
 
-
+box-shadow: 0px 2px 4px black;
 z-index: 3;
 
 
@@ -6939,14 +6939,17 @@ a { display: inline-block; }
    border-top: 180px solid transparent;
    margin-left:300px;
    border-bottom: 0px solid transparent;
+   z-index: 999999;
 }
-#left-triangle {
+.left-triangle {
+  position: absolute;
+  z-index: 2;
    width: 0;
    height: 0;
-   margin-left:300px;
-   border-right: 200px solid blue;
+  opacity: 0;
+   border-left: 60px solid white;
    border-top: 0px solid transparent;
-   border-bottom: 180px solid transparent;
+   border-bottom: 60px solid transparent;
 }
 
 #right-triangle2 {
@@ -6975,13 +6978,15 @@ a { display: inline-block; }
   margin:auto;
 }
 
-#longsquare{
-  
-width:300px;
-height: 180px;
-background:red;
-float:left;
-  
+#longsquare{opacity: .5;
+position: absolute;  
+width:10px;
+height: 250px;
+background:white;
+left: 0px;
+top:0px;
+z-index: 3;
+float: left;
 }
 #longsquare2{
   
@@ -7004,6 +7009,7 @@ margin-left:500px;
 .projectnav li, .projectnav a{
   display: inline-block;
   text-decoration: none;
+  width: 200px;
  
   padding: 40px 20px;
   
@@ -7012,8 +7018,8 @@ margin-left:500px;
   
 }
 .projectnav {
-width: 80%;
-margin-left: 200px;
+width: 100%;
+
 
 display: inline-block;
 
@@ -7132,15 +7138,21 @@ transition: all .05s ease;
 
 #artleft{
 position: absolute;
-right: 468px;
-top: 338px;
+right: 477px;
+top: -7px;
 z-index: 99;
 }
 
 #artright{
 position: absolute;
-right: 249px;
-top: 283px;
+right:275px;
+top: -19px;
+z-index: 99;
+}
+#artright2{
+position: absolute;
+right:81px;
+top: -19px;
 z-index: 99;
 }
 
@@ -7168,12 +7180,81 @@ z-index: 99;
 #designpane {
 padding: 0;
 background-image: url('../img/blackorchid.png');
+margin-bottom: 120px;
 }
 
-.modalthumb{
-  opacity: .45;
+
+.modalwrapper{
+  opacity: .45; transition: opacity .7s;
+
+
+
+
 }
-.modalthumb:hover{
+.modalwrapper:hover{
   opacity: 1;
-  transition: opacity .2s;
+   transition: all .6s;
+   z-index: 999;
+}
+.modalwrapper:hover > .left-triangle{
+  opacity: 1;
+   
+  
+   border-left: 70px solid white;
+   border-top: 0px solid transparent;
+   border-bottom: 70px solid transparent;
+   transition: all .3s;
+   
+}
+
+#musicpane {
+ background:transparent;
+ 
+  
+  padding:20px;
+
+}
+
+
+#musicwrap{ 
+width: 100%;
+ background:white;
+ background-image: url('../img/binding_light.png');
+
+}
+
+#musiccaption{
+  margin-top: 100px;
+  ;
+
+}
+
+#musicspan{
+ 
+ background-image: url('../img/asfalt.png');
+padding: 4px;
+   color: white;
+  
+}
+
+#musicspan a{text-decoration: none;
+}
+#modalpanel {margin-top: 0;
+  padding-top: 0;
+
+
+}
+
+#modalpanel > div {
+    margin-top: 0;
+    float: left;
+
+position: relative;
+  }
+
+
+#portrait{
+  float: right;
+  margin: 25px;
+  border: 4px solid white;
 }
