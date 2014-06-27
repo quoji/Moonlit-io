@@ -1400,8 +1400,8 @@ vertical-align: bottom;
 .top-bar .name h1::after {
       content: "";
   /*background: url(http://vector.me/files/images/2/2/229048/red_technology_background.jpg);*/
-  background: url('../img/blackorchid.png');
-  opacity: .2;
+  background: url('../img/tex2res4.png');
+  opacity: .15;
   background-position: right;
   background-repeat: repeat;
 
@@ -1718,7 +1718,7 @@ vertical-align: bottom;
      }
       .top-bar-section li:not(.has-form) a:not(.button):hover { /*top bamboo hover*/
         background: #272727; 
-        background:url('../img/asfalt.png');
+        background:url('../img/dark_Tire.png');
         color:white;
       }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
@@ -2743,7 +2743,7 @@ div.switch {
 .tabs-content {
   *zoom: 1;
   display: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
   width: 100%; }
   .tabs-content:before, .tabs-content:after {
     content: " ";
@@ -7081,6 +7081,7 @@ background: black;
   background-color: rgba(5,5,5,.8);
   padding: 20px 0px 20px 0px;
   box-shadow: -35px 0px 0px 0px rgba(5,5,5,.8), 35px 0px 0px 0px rgba(5,5,5,.8);
+  text-shadow: 0px 3px 1px black;
     
  
 
@@ -7112,7 +7113,7 @@ a {
 }
 #lethalcaption{
   margin-top: 120px;
-  margin-bottom: 120px;
+
 }
 
 #flappytitle{
@@ -7145,7 +7146,7 @@ z-index: 99;
 
 #artright{
 position: absolute;
-right:275px;
+right:295px;
 top: -19px;
 z-index: 99;
 }
@@ -7169,6 +7170,7 @@ z-index: 99;
   margin-left: 100px;
   margin-top: 100px;
   opacity: .8;
+  float: left;
 }
 
 
@@ -7257,4 +7259,89 @@ position: relative;
   float: right;
   margin: 25px;
   border: 4px solid white;
+}
+
+#footerdiv{
+  float: left;
+
+}
+#footerdiv > span{
+  font-size: 2em;
+  margin-top: 40px;
+  margin-left: 130px;
+
+}
+
+.downarrow{
+
+
+opacity: .75;
+ 
+}
+
+.downarrow:hover{
+ opacity: 1;
+ transition: all .1s;
+
+ }
+
+ .circle {
+      height:125px;
+     width:190px;
+  border-radius: 10px 10px 0 0;
+  -moz-border-radius: 90px 90px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  background:#000;
+  border-top: 1px solid gray;
+  background:url('../img/rebel.png');
+  margin: 0px auto;
+  margin-bottom: 0;
+  box-shadow: 0px 0px 2px black;
+  opacity: .95;
+  z-index: 9;
+  position: absolute;
+  left: 50%;  
+  margin-left: -95px;
+  bottom: 0px;
+transition: all .1s;
+   
+}
+  .circle:hover{
+    opacity: 1;
+    transition: all 1s;
+    
+box-shadow: 0px -5px 15px black;
+  
+  
+}
+
+.circle > div {
+    margin: auto;
+  position: absolute;
+ top: 45px; left: 0;  right: 0;
+  width: 0;
+height: 0;
+
+border-style: solid;
+border-width: 20px 15px 0 15px;
+border-color: white transparent transparent transparent;
+margin: 20px auto;
+
+box-shadow: 0px -10px 25px black;
+
+}
+.circle > div:hover {
+    margin: auto;
+  position: absolute;
+ top: 40px; left: 0;  right: 0;
+  width: 0;
+height: 0;
+
+border-style: solid;
+border-width: 21px 16px 0 16px;
+border-color: white transparent transparent transparent;
+margin: 20px auto;
+
+box-shadow: 0px -10px 25px black;
+
 }
