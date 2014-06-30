@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/foundationnew.css" />
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/sparks/jquery.fancybox.js"></script>
+    <script src="js/jquery.anchor.js"></script>
     <script src="js/sparks/jquery.fancybox.js"></script><script type="text/javascript">
+
     $(document).ready(function() {
    
 
@@ -43,13 +45,12 @@
     
   </head>
   <body>
-<img id="artleft" src="img/trileft.png">
 <img id="artright" src="img/triright.png">
 
 
 <div class="medium-12 columns">
         <div id = "maintitle">  <br>
-        <a href="file:///C:/Users/Stephen/Desktop/foundation/newHomemodal.html"><img src="img/cloud.png"></a><br>
+        <a href="file:///C:/Users/Stephen/Desktop/foundation/newHomemodal2.html"><img src="img/cloud.png"></a><br>
         <br>
         By Stephen Brownlee 
 </div>
@@ -83,12 +84,19 @@
        </li>
     
   
-       <li class="name"><h1><a href="newhomemodal.html">W<br>o<br>r<br>k</a></h1></li>
+       <li class="name"><h1><a href="newhomemodal2.html">W<br>o<br>r<br>k</a></h1></li>
 
     <li class="divider"></li>
 
-       <li class="name"><h1><a href="contact.html">C<br>o<br>n<br>t<br>a<br>c<br>t</a></h1></li>
-
+         <li class="name" id="seecontact" tabindex="0"><h1><a>C<br>o<br>n<br>t<br>a<br>c<br>t</a></h1></li>
+        <div id="contactcard">
+          <div>
+            <p class="enigma">STEPHEN BROWNLEE</p>
+            <img src="img/swash.png">
+            <p class="muncie">SBROWNLEE90@GMAIL.COM</p>
+            <p class="muncie">SOUNDCLOUD.COM/SBROWNLEE</p>
+          </div>
+        </div>
       
       </li>
 
@@ -112,24 +120,36 @@
 
 
 
-<div class="row median">
-  
-</div>
+<div class="row median"></div>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+       <div class="small-12 column large-centered "> <!--down button-->
+             <a class="anchorLink" rel="" href="#whoiam">
+              <div class="circle2" >
+              <div class="small-centered downarrow" ></div>
+              </div>
+              </a>
+        </div>
       
 <div class="row">      <!--about-->
   <div class="panel">
   
-    <div class="large-8 column">
-    <p> <h4>WHO I AM</h4></p><br> 
-    <p>
-    I'm Stephen, or quoji. Welcome to my lair. I'm a lover of all things creative and interactive and believe in the power of aesthetic entities as influencers in our lives, inspiring and challenging us to grope for those passings glimpses of beauty around us. Pretty deep, right?<br><br>There are a lot of ways you can get to know me, both my perusing the <a href="">Design gallery tab</a>, <a href="soundcloud.com/jsbrownlee">my Soundcloud</a>, <a href="">my Projects tab </a> for games and interactive media, or for a more professional twist, take a look at my <a href="">resume</a>.   If you want to get personal, you can find me at meetups around the Austin area or just drop me an email with whatever questions you may have. If you've read this far, well, thanks! </p><br><br><br><br><br><br><br><br><br><br>
+    <div class="large-8 column" id="whoiam">
+    <p > <h4>WHO I AM</h4></p><br> 
+    <p >
+    I'm Stephen, or quoji. Welcome to my lair. I'm a lover of all things creative and interactive and believe in the power of aesthetic entities as influencers in our lives, inspiring and challenging us to grope for those passings glimpses of beauty around us. Pretty deep, right?<br><br> 
 
+    </p> <h4>WHAT I DO</h4><br><p> 
+    <p id="aboutblurb">
+    Get an idea of my work by either perusing the <a href="newhomemodal2.html#designpanel">design scrapyard</a>, <a href="soundcloud.com/jsbrownlee">my Soundcloud</a>, <a href="panel2a">my games projects tab </a> for games and interactive media, or for a more professional twist, take a look at my <a href="">resume</a>.   If you want to get personal, you can find me at meetups around the Austin area or just drop me an email with whatever questions you may have. If you've read this far, well, thanks! </p><br><br><br><br><br><br><br><br><br><br>
+    </p>
     
       
     
     </div>
-    <div class="large-3 column">
-<img id="portrait" src="img/me.png">
+    <div class="large-3 column" id="whoiam">
+<img id="portraitme" src="img/me.png">
     </div>
 </div>
   

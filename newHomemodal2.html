@@ -12,21 +12,8 @@
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/sparks/jquery.fancybox.js"></script>
     <script src="js/sparks/jquery.fancybox.js"></script>
-    <script>
-    $(".scroll").click(function(event){
-         event.preventDefault();
-         //calculate destination place
-         var dest=0;
-         if($(this.hash).offset().top > $(document).height()-$(window).height()){
-              dest=$(document).height()-$(window).height();
-         }else{
-              dest=$(this.hash).offset().top;
-         }
-         //go to destination
-         $('html,body').animate({scrollTop:dest}, 1000,'swing');
-     });
-
-    </script>
+    <script src="js/jquery.anchor.js"></script>
+  
 
 
     <script type="text/javascript">
@@ -137,15 +124,15 @@
     </div>
 
       
-<div class="row median">
+<div class="row median" id="topmenu">
   
 </div>
       
 <div class="row">      <!--SUBNAV-->
 <dl class="tabs horizontal" data-tab>
   <dd ><a href="#panel1a">Music</a></dd>
-  <dd class="active"> <a href="#panel2a">Projects</a></dd>
-  <dd><a href="#panel3a">Design</a></dd>
+  <dd class="active" > <a href="#panel2a">Projects</a></dd>
+  <dd><a href="#panel3a" id="designpanel">Design</a></dd>
 
 </dl>
 </div>
@@ -312,13 +299,14 @@
      
        
    
-       <li class="name "><a class="scroll" href="#pantyhero"><img class="navlogo" src="img/pantyhero.png"></a></li>
-       <li class="name "><a class="scroll" href="#lethalpursuit"><img class="navlogo" src="img/lethallogo9.png"></a></li>
-       <li class="name "><a class="scroll" href="#cave"><img class="navlogo" src="img/yellow.png"></a></li>
-       <li class="name "><a class="scroll" href="#born"><img class="navlogo" src="img/bornlogoclean.png"></a></li>
-       <li class="name "><a class="scroll" href="#flappy"><img class="navlogo" src="img/TITLE5.png"></a></li>
+       <li class="name "><a class="anchorLink" rel="" href="#pantyhero"><img class="navlogo" src="img/pantyhero.png"></a></li>
+       <li class="name "><a class="anchorLink" rel="" href="#lethalpursuit"><img class="navlogo" src="img/lethallogo9.png"></a></li>
+       <li class="name "><a class="anchorLink" rel="" href="#cave"><img class="navlogo" src="img/yellow.png"></a></li>
+       <li class="name "><a class="anchorLink" rel="" rel="" href="#born"><img class="navlogo" src="img/bornlogoclean.png"></a></li>
+       <li class="name "><a class="anchorLink" rel="" href="#flappy"><img class="navlogo" src="img/TITLE5.png"></a></li>
        
-       
+
+
    
   </ul>
   </div>
@@ -354,12 +342,12 @@
               
       </div>
        <div class="small-12 column large-centered "> <!--down button-->
-              <a>
+             <a class="anchorLink" rel="" href="#lethalpursuit">
               <div class="circle">
               <div class="small-centered downarrow"></div>
               </div>
               </a>
-        </div>
+              </div>
       </div>
 
 
@@ -405,7 +393,7 @@
     
 
      <div class="small-12 column large-centered "> <!--down button-->
-              <a>
+              <a class="anchorLink" rel="" href="#cave">
               <div class="circle">
               <div class="small-centered downarrow"></div>
               </div>
@@ -440,7 +428,7 @@
     </div>
 
  <div class="small-12 column large-centered "> <!--down button-->
-              <a>
+              <a class="anchorLink" rel="" href="#born">
               <div class="circle">
               <div class="small-centered downarrow"></div>
               </div>
@@ -564,7 +552,7 @@
         <br>
         <br>
         <br>
-        
+
          
 
               <h4>BORN</h4>   
@@ -587,14 +575,14 @@
       </div>
      
    
-    <section>
-    
+    <section id="destination1">
+  
      
    
     </div>
 
      <div class="small-12 column large-centered "> <!--down button-->
-              <a>
+              <a class="anchorLink" rel="" href="#flappy">
               <div class="circle">
               <div class="small-centered downarrow"></div>
               </div>
@@ -641,7 +629,8 @@
 
 
   <div class="small-12 column large-centered "> <!--down button-->
-              <a href="#panel2a">
+              <a class="anchorLink" rel="" href="#topmenu">
+              
               <div class="circle">
               <div class="small-centered uparrow"></div>
               </div>

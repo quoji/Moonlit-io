@@ -28,7 +28,10 @@
     font-family: "RkR1zqWVsUyfZ2tEC46j5A==";
     src: url("../fonts/Etica.ttf");
 }
-
+@font-face {
+    font-family: "Muncie";
+    src: url("../fonts/Muncie.ttf");
+}
 /*@font-face {
     font-family: "Chinese2";
     src: url("../fonts/Chinese2.ttf");
@@ -97,7 +100,7 @@ html, body {
 html,
 body {
   font-size: 100%; 
-overflow-x: hidden;}
+}
 
 body {
 
@@ -175,6 +178,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+
   /*max-width: 75rem;*/
   *zoom: 1; }
   .row:before, .row:after {
@@ -1352,8 +1356,20 @@ meta.foundation-mq-topbar {
     font-size: 16px;
     white-space:nowrap;
     vertical-align: bottom;
-   
+   }
+#seecontact:focus ~ #contactcard{
+  opacity: 1;
 
+  left: 100px;
+  transition: all .2s;
+
+}
+#seecontact:focus{
+  
+  
+  outline: none;
+
+}
 
 /*background: linear-gradient(to bottom,  rgba(69,172,177,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
 
@@ -1400,8 +1416,8 @@ vertical-align: bottom;
 .top-bar .name h1::after {
       content: "";
   /*background: url(http://vector.me/files/images/2/2/229048/red_technology_background.jpg);*/
-  background: url('../img/tex2res4.png');
-  opacity: .15;
+  background: url('../img/suede1.jpg');
+  opacity: .55;
   background-position: right;
   background-repeat: repeat;
 
@@ -1805,7 +1821,7 @@ vertical-align: bottom;
       
       clear: none;
       height: 490px;
-      background-image: url('../img/rebel.png');
+      background-image: url('../img/tex2res4.png');
       width: 14px; }
     .top-bar-section .has-form {
       background: #333333;
@@ -2077,7 +2093,10 @@ vertical-align: bottom;
   border-width: 0px;
   border-color: #d8d8d8;
   /*margin-bottom: 1.25rem;*/
-  padding: 1rem 6rem;
+  padding-top:  1rem;
+  padding-left: 8rem;
+  padding-right: 6rem;
+  padding-bottom: 1rem;
   background: clear;
   line-height: 1.5;
   letter-spacing: 1px;
@@ -7039,14 +7058,22 @@ display: inline-block;
 
 .navlogo {
   
+  transition: all .1s; 
   width: 200px;
+}
+.navlogo:hover{
+  
+  transition: all .2s;
+   -ms-transform: translate(0px,-5px); /* IE 9 */
+     -webkit-transform: translate(0px,-5px); /* Chrome, Safari, Opera */
+    transform: translate(0px,-5px);;
 }
 
 #footer {
 
   height: 400px;
 background: black;
-  background-image: url('../img/tex2res4.png');
+  background-image: url('../img/subtle_carbon.png');
   
 }
 
@@ -7057,10 +7084,12 @@ background: black;
 } 
 
 #orange {
-
   color: (0, 109, 109);
 }
-
+#pantyhero img{margin-bottom: 20px;
+  margin-left: 20px;
+  display: inline;
+}
 #lethalrow {
    margin:1px;
   background:black;
@@ -7255,10 +7284,22 @@ position: relative;
   }
 
 
-#portrait{
+#portraitme{height: 300px;
   float: right;
   margin: 25px;
   border: 4px solid white;
+  transition: all .3s;
+
+}
+#portraitme:hover{
+  
+  -ms-transform: translate(0, -5px); /* IE 9 */
+     -webkit-transform: translate(0px,-5px); /* Chrome, Safari, Opera */
+    transform: translate(0px,-5px);
+  transition: transform .05s;
+  box-shadow: 10px 0px 100px 10px gray;
+  transition: box-shadow 1.5s gray;
+
 }
 
 #footerdiv{
@@ -7315,7 +7356,7 @@ box-shadow: 0px -5px 15px black;
   
 }
 
-.circle > div {
+.circle > .downarrow, .circle2 > .downarrow{
     margin: auto;
   position: absolute;
  top: 45px; left: 0;  right: 0;
@@ -7330,7 +7371,26 @@ margin: 20px auto;
 box-shadow: 0px -10px 25px black;
 
 }
-.circle > div:hover {
+
+
+
+
+.circle > .uparrow {
+    margin: auto;
+  position: absolute;
+ top: 45px; left: 0;  right: 0;
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 15px 20px  15px;
+border-color: transparent transparent white transparent;
+margin: 20px auto;
+
+box-shadow: 0px -10px 25px black;
+
+}
+
+.circle > .downarrow:hover {
     margin: auto;
   position: absolute;
  top: 40px; left: 0;  right: 0;
@@ -7344,4 +7404,96 @@ margin: 20px auto;
 
 box-shadow: 0px -10px 25px black;
 
+}
+
+#contactcard{
+  position: absolute;
+  left: 0px;
+  background-color: black; 
+  background-image: url('../img/subtle_carbon.png');
+  width: 400px;
+  height: 250px;
+  top: 300px;
+  box-shadow: 2px 0px 2px black;
+  z-index: 92;
+  opacity: 0;
+  transition: all .2s;
+
+}
+
+
+
+#contactcard > div {
+  padding: 2rem;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+
+}
+.enigma{
+  font-family: "Enigmatic";
+  font-size: 2.5rem;
+  margin-top: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+ 
+  text-align: center;
+ background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRf9hzNOU3Gif6YRsdp8HpVpB8dNORnlizJYF54KnU4P5n86s4i9g');
+ 
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.muncie{
+  font-family: "Muncie";
+  line-height: 2;
+  text-align: center;
+
+}
+
+#whoiam{
+  margin-top: 200px;
+}
+
+#fone{
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#footercaption{
+
+float: right;
+}
+
+#aboutblurb a{
+  text-decoration:none; 
+}
+
+
+.tabs-content {overflow-x:hidden;
+}
+
+#aboutdownarrow: {
+ 
+}
+
+ .circle2 {
+  height:125px;
+  width:190px;
+  
+  -moz-border-radius: 90px 90px 0 0;
+  -webkit-border-radius:  0 0 20px 20px;
+  background:#000;
+  border-bottom: 1px solid gray;
+  background:url('../img/rebel.png');
+  margin: 0px auto;
+  margin-bottom: 0;
+  box-shadow: 0px 0px 2px black;
+  opacity: .95;
+  z-index: 9;
+  position: absolute;
+  left: 50%;  
+  margin-left: -95px;
+  bottom: 0px;
+transition: all .1s;
+   
 }
