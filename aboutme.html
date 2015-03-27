@@ -1,18 +1,35 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+    <link rel="icon" 
+      
+    href="img/favicon.ico">
     <meta charset="utf-8" />
-    <link href='http://fonts.googleapis.com/css?family=Rokkitt:700' rel='stylesheet' type='text/css'>
+    
     <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
     <title>Audio</title>
     <link rel="stylesheet" href="css/foundationnew.css" />
+    
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    
     <script src="js/jquery-1.11.0.min.js"></script>
+  
+    <script src="js/sparks/jquery.fancybox.js"></script>
     <script src="js/sparks/jquery.fancybox.js"></script>
     <script src="js/jquery.anchor.js"></script>
-    <script src="js/sparks/jquery.fancybox.js"></script><script type="text/javascript">
+  <!--<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>-->
+
+    </script><script type="text/javascript">
 
     $(document).ready(function() {
-   
+            if(window.location.hash){
+                $('dl.tabs dd a').each(function(){
+                    var hash = '#' + $(this).attr('href').split('#')[1];
+                    if(hash == window.location.hash){
+                        $(this).click();
+                    }
+                });
+            }
 
       $('.fancybox').fancybox();
  
@@ -44,7 +61,7 @@
     <script src="js/vendor/modernizr.js"></script>
     
   </head>
-  <body>
+  <body class="mCustomScrollbar">
 
 
 <div class="medium-12 columns">
@@ -55,9 +72,9 @@
     <nav class="top-bar" data-topbar>
      
     
-  <section class="top-bar-section">
+  <section id="displayoverride" class="top-bar-section">
     <!-- Right Nav Section -->
-    <ul class="right">
+    <ul id="mainmenucenter" class="column large-centered">
       
    
     
@@ -80,7 +97,7 @@
         <div id="contactcard">
           <div>
             <p class="enigma"></p>
-            <img src="img/swash.png"><br><br>
+          
             <p class="muncie">SBROWNLEE90@GMAIL.COM</p>
             <p class="muncie">SOUNDCLOUD.COM/SBROWNLEE</p>
           </div>
@@ -120,13 +137,16 @@
 <div class="row">      <!--about-->
   <div class="panel">
      <div class="large-4 column" id="whoiam">
-      <img id="portraitme" src="img/me.png">
+     
     </div>
  
     <div class="large-12 column" id="whoiam">
-    <h4 id="vertext">W<br>H<br>O<br><br> I <br><br>A<br>M</h4><br><p>  
+    <!--<h4 id="vertext">W<br>H<br>O<br><br> I <br><br>A<br>M</h4><br><p>  -->
      <div id="indentabout">
     <p id="aboutblurb2">
+    <br/>
+    <br/>
+    <br/>
     I'm a lover of all things <span id="bigger">creative/interactive</span> and believe in the power of <span id="big">aesthetic entities</span> as influencers in our lives, challenging us to chase after those<span id="big"> passing glimpses of beauty</span> around us.<br><br> 
       </p>
     </div>
@@ -136,11 +156,12 @@
 
     <div class="large-12 column" id="whoiam">
 
-     <h4 id="vertext">W<br>H<br>A<br> .T <br><br>I<br> <br>D<br>O</h4><br><p> 
+     <h4 id="vertext">m<br>o<br>O<br>N<br>L<br>I<br>T</h4><br><p> 
+
     <div  id="whoiam">
     <div id="indentabout">
     <p id="aboutblurb">
-    Peruse the <span id="big"><a href="newhomemodal2.html#designpanel">design scrapyard</a>,</span> my<a href="soundcloud.com/jsbrownlee"></span> <span id="big">Soundcloud</a></span>, or my<a href="#panel2a"><span id="big"> games </span>projects </a> section for interactive media, or  take a look at my <a href=""><span id="big">resume</a></span>.   If you want to get personal,  drop me an <span id="big">email</span> with whatever questions you may have. </p><br><br><br><br><br><br><br><br><br><br>
+    Peruse the <span id="big"><a href="newhomemodal2.html#designpanel" onclick="$('#tabbedmenu a[href=\'#designpanel\']').click()">design scrapyard</a>,</span> my<a href="soundcloud.com/jsbrownlee"></span> <span id="big">Soundcloud</a></span>, or my<a href="newhomemodal2.html"><span id="big"> games </span>projects </a> section for interactive media, or  take a look at my <a href=""><span id="big">resume</a></span>.   If you want to get personal,  drop me an <span id="big">email</span> with whatever questions you may have. </p><br><br><br><br><br><br><br><br><br><br>
     </p>
     </div>
     </div>
@@ -153,7 +174,7 @@
 
 </div>
 <div class="small-12 column large-centered "> <!--down button-->
-              <a class="anchorLink" href="#toppu">
+              <a class="anchorLink" href="#maintitle">
               <div class="circle">
               <div class="small-centered uparrow"></div>
               </div>
