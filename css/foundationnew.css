@@ -7102,7 +7102,7 @@ margin-left:500px;
   text-decoration: none;
   width: 200px;
  
-  padding: 40px 20px;
+  padding: 30px 2px;
   
   
 
@@ -7184,7 +7184,7 @@ background: black;
 }
 #lethalrow span, #bornrow span{
   background-color: rgba(5,5,5,.8);
-  padding: 14px 0px 14px 0px;
+  padding: 13px 0px 13px 0px;
   box-shadow: -35px 0px 0px 0px rgba(5,5,5,.8), 35px 0px 0px 0px rgba(5,5,5,.8);
   text-shadow: 0px 3px 1px black;
     
@@ -7564,14 +7564,14 @@ box-shadow: 0px -12px 5px -7px black;
 
 #whoiam{
   
-  margin-left: 40px;
+  
    text-shadow: 0px 2px 0px black;
 }
 
 #aboutblurb, #aboutblurb2 {
-  text-shadow: 0px 2px 0px black;
+  text-shadow: 2px 2px 7px black;
   font-size:1.4rem;
-  font-style: italic;
+  color:rgb(255, 247, 211);
 
   font-family: Prox;
   
@@ -7579,10 +7579,19 @@ box-shadow: 0px -12px 5px -7px black;
 }
 
 #aboutwrap{
-  background-color:rgba(10,10,10,.99);
+  background-color:rgba(20, 20, 20, 1);
   padding:71px 00px 99px 0px;
-  box-shadow: -60px 0px 0px 0 rgba(10,10,15,.99),
-  60px 0px 0px 0 rgba(10,10,10,.99);
+  box-shadow: -96px 20px 0px 0 rgba(20, 20, 20, 1), 
+  96px 23px 0px 0 rgba(20, 20, 20, 1), 
+  87px 54px 19px 0 rgba(2, 2, 2, 1),
+  135px 0px 0px 0px rgba(20, 20, 20, 1);
+
+
+
+
+  -60px 0px 0px 0 rgba(20, 20, 20, 1),
+  60px 0px 0px 0 rgba(20, 20, 20, 1), 
+  80px 50px 0px 0 rgba(2, 2, 2, 1),60px 20px 20px 0px rgba(20, 20, 20, 1);
 }
 
 #fone{
