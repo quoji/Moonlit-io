@@ -19,8 +19,8 @@
     src: url("../fonts/Aliquam.ttf");
 }
 @font-face {
-    font-family: "Prox";
-    src: url("../fonts/ProxThin.ttf");
+    font-family: "Odd";
+    src: url("../img/Odd.ttf");
 }
 @font-face {
     font-family: "RkR1zqWVsUyfZ2tEC46j5A==";
@@ -1726,7 +1726,7 @@ background: rgb(20,20,20); /* Old browsers */
       font-size: 26px;
       line-height: 30px;
       
-      font-family: "Prox";
+      font-family: Odd, Enigmatic;
       text-shadow:0 2px  1px black;
       text-align:center;
 
@@ -2104,7 +2104,7 @@ background-image: url('../img/broken_noise.png'); /* Old browsers */
   background: clear;
   line-height: 1.5;
   letter-spacing: 1px;
-  font-family: 'Prox';
+  font-family: 'Enigmatic';
 
   
 }
@@ -3118,7 +3118,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
 
-  font-family: 'Pacifico', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 700;
   
   
@@ -7572,9 +7572,7 @@ box-shadow: 0px -12px 5px -7px black;
   text-shadow: 2px 2px 7px black;
   font-size:1.4rem;
   color:rgb(255, 247, 211);
-
-  font-family: Prox;
-  
+  font-family: Odd, Enigmatic;
  
 }
 
@@ -7585,9 +7583,6 @@ box-shadow: 0px -12px 5px -7px black;
   96px 23px 0px 0 rgba(20, 20, 20, 1), 
   87px 54px 19px 0 rgba(2, 2, 2, 1),
   135px 0px 0px 0px rgba(20, 20, 20, 1);
-
-
-
 
   -60px 0px 0px 0 rgba(20, 20, 20, 1),
   60px 0px 0px 0 rgba(20, 20, 20, 1), 
