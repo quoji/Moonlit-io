@@ -1,62 +1,5 @@
-
-  @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-  @import url(http://fonts.googleapis.com/css?family=Oxygen);
-  @import url(http://fonts.googleapis.com/css?family=Raleway:100);
-  @import url(http://fonts.googleapis.com/css?family=Montserrat);
-  @import url(http://fonts.googleapis.com/css?family=Ubuntu);
-  @import url(http://fonts.googleapis.com/css?family=Arvo);
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-@import url(http://fonts.googleapis.com/css?family=Satisfy);
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);*/
-
-
-@font-face {
-    font-family: "Chinese1";
-    src: url("../fonts/Chinese1.otf");
-}
-@font-face {
-    font-family: "Alq";
-    src: url("../fonts/Aliquam.ttf");
-}
-@font-face {
-    font-family: "Odd";
-    src: url("../fonts/Odd.ttf");
-}
-@font-face {
-    font-family: "RkR1zqWVsUyfZ2tEC46j5A==";
-    src: url("../fonts/Etica.ttf");
-}
-@font-face {
-    font-family: "Muncie";
-    src: url("../fonts/Muncie.ttf");
-}
-/*@font-face {
-    font-family: "Chinese2";
-    src: url("../fonts/Chinese2.ttf");
-}
-@font-face {
-    font-family: "Engravers";
-    src: url("../fonts/ENGR.ttf");
-}
-
-@font-face {
-    font-family: "Oregon";
-    src: url("../fonts/Oregon LDO Book.ttf");
-}
-@font-face {
-    font-family: "GLS";
-    src: url("../fonts/GOUDOSI.ttf");
-}*/
-
-@font-face {
-    font-family: "Enigmatic";
-    src: url("../fonts/Enigma.ttf");
-}
-
-@font-face {
-    font-family: "Prenton";
-    src: url("../fonts/Enigma.ttf");
-}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
 
 meta.foundation-version {
   font-family: "/5.2.2/"; }
@@ -226,9 +169,6 @@ select {
     position: relative;
     left: 0%;
     right: auto; }
-
-
-
 
   .small-pull-0 {
     position: relative;
@@ -2682,11 +2622,6 @@ div.switch {
   width: 50%;
     }
 }
-
-
-
-
-
 
 @media only screen and (max-width: 40em) {
   .orbit-stack-on-small .orbit-slides-container {
@@ -7065,31 +7000,29 @@ a { display: inline-block; }
 }
 
 #mainbanner{
-
   margin:auto;
 }
 
-#longsquare{opacity: .5;
-position: absolute;
-width:10px;
-height: 250px;
-background:white;
-left: 0px;
-top:0px;
-z-index: 3;
-float: left;
+#longsquare {
+  opacity: .5;
+  position: absolute;
+  width:10px;
+  height: 250px;
+  background:white;
+  left: 0px;
+  top:0px;
+  z-index: 3;
+  float: left;
 }
-#longsquare2{
 
-width:600px;
-height: 180px;
-background:red;
-float:left;
-margin-top: -180px;
-float:left;
-margin-left:500px;
-
-
+#longsquare2 {
+  width:600px;
+  height: 180px;
+  background:red;
+  float:left;
+  margin-top: -180px;
+  float:left;
+  margin-left:500px;
 }
 
 .logo {
@@ -7097,17 +7030,13 @@ margin-left:500px;
   margin-top: 60px;
 }
 
-.projectnav li, .projectnav a{
+.projectnav li, .projectnav a {
   display: inline-block;
   text-decoration: none;
   width: 195px;
-
   padding: 30px 2px;
-
-
-
-
 }
+
 .projectnav {
 width: 1016px;
 
