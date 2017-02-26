@@ -6396,7 +6396,7 @@ a {
 #aboutwrap{
   background-color:rgba(20, 20, 20, 1);
   box-shadow:
-  -12px 22px 20px 0 rgba(20, 20, 20, 1), -5px 10px 0px 0 rgba(20, 20, 20, 1), 35px 4px 0px 0 rgba(42, 29, 17, 1), 40px 14px 22px 0px rgba(20, 20, 20, 1);
+  -17px 6px 20px 0 rgba(20, 20, 20, 1), 8px 3px 0px 0 rgba(20, 20, 20, 1), -22px 3px 0px 0 rgba(235, 104, 92, 1), 0px 0 28px 0px rgba(20, 20, 20, 1)
 }
 
 #fone{
@@ -6446,7 +6446,7 @@ a {
 }
 
 #bigger{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #big{
@@ -6470,6 +6470,7 @@ a {
 
 #indentabout {
   margin-left: 200px;
+  width:700px;
 }
 
 
