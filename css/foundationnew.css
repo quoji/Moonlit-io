@@ -6396,12 +6396,11 @@ a {
 
 #aboutwrap{
   background-color:rgba(20, 20, 20, 1);
-  padding:71px 00px 99px 0px;
-  box-shadow: -96px 20px 0px 0 rgba(20, 20, 20, 1),
-  96px 23px 0px 0 rgba(20, 20, 20, 1),
-  87px 54px 19px 0 rgba(2, 2, 2, 1),
-  135px 0px 0px 0px rgba(20, 20, 20, 1);
-
+  box-shadow:
+  -90px 0px 0px 0 rgba(20, 20, 20, 1),
+  90px 0px 0px 0 rgba(20, 20, 20, 1),
+  90px 0px 0px 0 rgba(2, 2, 2, 1),
+  90px 0px 0px 0px rgba(20, 20, 20, 1);
   -60px 0px 0px 0 rgba(20, 20, 20, 1),
   60px 0px 0px 0 rgba(20, 20, 20, 1),
   80px 50px 0px 0 rgba(2, 2, 2, 1),60px 20px 20px 0px rgba(20, 20, 20, 1);
