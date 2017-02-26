@@ -6389,7 +6389,7 @@ a {
 
 #aboutblurb, #aboutblurb2 {
   text-shadow: 2px 2px 7px black;
-  font-size:1.4rem;
+  font-size:1.1rem;
   color:rgb(255, 247, 211);
   font-family: Odd, Enigmatic;
 }
@@ -6455,7 +6455,7 @@ a{text-decoration: none;}a:hover{text-decoration: none;}
 }
 
 #big{
-  font-size: 2.2rem;
+  font-size: 2.0rem;
 }
 
 #pls{ width: 100%;
