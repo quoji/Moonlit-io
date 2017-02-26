@@ -6442,18 +6442,23 @@ a {
 }
 
 a {
-  text-decoration: none;}a:hover{text-decoration: none;
+  text-decoration: none;
 }
 
-#bigger{
+a:hover {
+  text-decoration: none;
+}
+
+#bigger {
   font-size: 2.5rem;
 }
 
-#big{
+#big {
   font-size: 2.0rem;
 }
 
-#pls{ width: 100%;
+#pls {
+  width: 100%;
   margin: 0 auto;
 }
 
