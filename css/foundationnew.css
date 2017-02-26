@@ -1292,7 +1292,6 @@ meta.foundation-mq-topbar {
   .top-bar .name {
     height: 450px;
     margin: 0;
-      background-image: url('../img/.png');
     font-size: 16px;
     white-space:nowrap;
 
