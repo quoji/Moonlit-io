@@ -6376,7 +6376,7 @@ a {
 }
 
 .muncie{
-  font-family: "Enigmatic";
+  font-family: "Enigmatic", "Raleway","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif ;
   line-height: 2;
   font-size: .8rem;
   text-align: center;
